@@ -7,5 +7,7 @@ target 'never-the-less' do
 
   # Pods for never-the-less
   pod 'Firebase/Core'
+  pod 'SnapKit', '~> 4.0'
+  pod 'CollectionViewSlantedLayout', '~> 3.1'
 
 end

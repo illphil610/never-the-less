@@ -1,4 +1,5 @@
 PODS:
+  - CollectionViewSlantedLayout (3.1.1)
   - Firebase/Core (5.5.0):
     - Firebase/CoreOnly
     - FirebaseAnalytics (= 5.1.0)
@@ -45,12 +46,16 @@ PODS:
     - nanopb/encode (= 0.3.8)
   - nanopb/decode (0.3.8)
   - nanopb/encode (0.3.8)
+  - SnapKit (4.2.0)
 
 DEPENDENCIES:
+  - CollectionViewSlantedLayout (~> 3.1)
   - Firebase/Core
+  - SnapKit (~> 4.0)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - CollectionViewSlantedLayout
     - Firebase
     - FirebaseAnalytics
     - FirebaseCore
@@ -58,8 +63,10 @@ SPEC REPOS:
     - GoogleAppMeasurement
     - GoogleUtilities
     - nanopb
+    - SnapKit
 
 SPEC CHECKSUMS:
+  CollectionViewSlantedLayout: 24397455acd2461960bc45d394e0ef99c17d03ce
   Firebase: 8c957f9cb3852b519180fb378801b7eeeba4d288
   FirebaseAnalytics: d4a260c114aec0d765ab5b9c404ac63de1d29381
   FirebaseCore: ee4b35cf8c8e781da296cc7c15125e4608bb954d
@@ -67,7 +74,8 @@ SPEC CHECKSUMS:
   GoogleAppMeasurement: e785bdb86d3d280abc778156cec323a975f11d1d
   GoogleUtilities: 06b66f9567769a7958db20a92f0128b2843e49d5
   nanopb: 5601e6bca2dbf1ed831b519092ec110f66982ca3
+  SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
 
-PODFILE CHECKSUM: 5a68f23f4804c957a2ba513f7efe020b30b42c95
+PODFILE CHECKSUM: 15c42c4fed49dbdb2ac06cebae0bd7188b16384b
 
 COCOAPODS: 1.5.3

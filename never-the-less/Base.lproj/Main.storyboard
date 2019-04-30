@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="utg-Yz-GW3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,51 +10,19 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item 2-->
-        <scene sceneID="HLy-c2-CAr">
-            <objects>
-                <viewController id="WK5-Du-hZb" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="mYZ-ls-DEx">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="0.63921568630000003" blue="0.8862745098" alpha="1" colorSpace="calibratedRGB"/>
-                        <viewLayoutGuide key="safeArea" id="oKS-Au-Baw"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="lVx-Ni-X2D"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dN5-or-Jji" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-484" y="679"/>
-        </scene>
-        <!--Item 1-->
-        <scene sceneID="7xw-bh-j6g">
-            <objects>
-                <viewController id="UjI-P4-ElK" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="JXK-SQ-nk1">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" name="controlAccentColor" catalog="System" colorSpace="catalog"/>
-                        <viewLayoutGuide key="safeArea" id="xSe-yh-62e"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="O9P-Zs-Rz8"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="drX-bX-Xxg" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-503" y="-289"/>
-        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="eb9-Uu-yKh">
             <objects>
-                <tabBarController id="utg-Yz-GW3" sceneMemberID="viewController">
+                <tabBarController id="utg-Yz-GW3" customClass="TabBarController" customModule="never_the_less" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="a8j-RG-VMf">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="UjI-P4-ElK" kind="relationship" relationship="viewControllers" id="2Ai-rK-FfS"/>
+                        <segue destination="JOG-gW-AJM" kind="relationship" relationship="viewControllers" id="OSx-Ud-oxx"/>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="V6r-l7-Ekb"/>
-                        <segue destination="WK5-Du-hZb" kind="relationship" relationship="viewControllers" id="F8Q-xm-sV7"/>
+                        <segue destination="LIf-oJ-WxI" kind="relationship" relationship="viewControllers" id="e3L-U6-IzY"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="i9f-RR-rja" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -62,13 +30,83 @@
             <point key="canvasLocation" x="-1437" y="171"/>
         </scene>
         <!--Item-->
+        <scene sceneID="9e9-jo-zhr">
+            <objects>
+                <collectionViewController id="JOG-gW-AJM" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="g6M-Ba-gxT">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="wUi-2W-NTk">
+                            <size key="itemSize" width="50" height="50"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Mpm-1P-Bkd">
+                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </view>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="JOG-gW-AJM" id="8ri-ei-nw9"/>
+                            <outlet property="delegate" destination="JOG-gW-AJM" id="7tN-T3-omi"/>
+                        </connections>
+                    </collectionView>
+                    <tabBarItem key="tabBarItem" title="Item" id="nuG-07-vm4"/>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vMQ-qb-R1t" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-418" y="-296"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="Z6J-lG-UFr">
+            <objects>
+                <collectionViewController id="LIf-oJ-WxI" customClass="SongCollectionViewController" customModule="never_the_less" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="zDN-Nm-Nau">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="fCS-O7-QU2">
+                            <size key="itemSize" width="50" height="50"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="songViewCell" id="MkL-qO-jxk">
+                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </view>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="LIf-oJ-WxI" id="sZ2-im-kzH"/>
+                            <outlet property="delegate" destination="LIf-oJ-WxI" id="k0h-re-bgt"/>
+                        </connections>
+                    </collectionView>
+                    <tabBarItem key="tabBarItem" title="Item" id="WfR-hZ-lIs"/>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gPa-th-dya" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-418" y="727"/>
+        </scene>
+        <!--Item-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="never_the_less" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ProfileViewController" customModule="never_the_less" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.40281910939999999" green="0.37753675539999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="Oa6-Qv-Sn7"/>
