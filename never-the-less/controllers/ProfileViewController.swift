@@ -76,7 +76,7 @@ class ProfileViewController: UIViewController, UIScrollViewDelegate {
         
         infoText.textColor = .black
         infoText.numberOfLines = 0
-        infoText.text = "Lorem ipsum dolor sit amet, in alia adhuc aperiri nam. Movet scripta tractatos cu eum, sale commodo meliore ea eam, per commodo atomorum ea. Unum graeci iriure nec an, ea sit habeo movet electram. Id eius assum persius pro, id cum falli accusam. Has eu fierent partiendo, doming expetenda interesset cu mel, tempor possit vocent in nam. Iusto tollit ad duo, est at vidit vivendo liberavisse, vide munere nonumy sed ex.Quod possit expetendis id qui, consequat vituperata ad eam. Per cu elit latine vivendum. Ei sit nullam aliquam, an ferri epicuri quo. Ex vim tibique accumsan erroribus. In per libris verear adipiscing. Purto aliquid lobortis ea quo, ea utinam oportere qui."
+        infoText.text = "Never The Less."
         infoText.font = .systemFont(ofSize: 32)
         
         let imageContainer = UIView()

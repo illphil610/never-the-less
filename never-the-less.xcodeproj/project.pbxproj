@@ -10,8 +10,8 @@
 		8AB38BC9E353B1C5FB9A1792 /* Pods_never_the_less.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D91C6F8FD9542521AAF0053 /* Pods_never_the_less.framework */; };
 		D440F7622277EC99002D5D3F /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D440F7612277EC99002D5D3F /* ProfileViewController.swift */; };
 		D440F76C2277FEB9002D5D3F /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D440F76B2277FEB9002D5D3F /* TabBarController.swift */; };
-		D440F76E227804CD002D5D3F /* SongCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D440F76D227804CD002D5D3F /* SongCollectionViewCell.swift */; };
-		D440F772227806EC002D5D3F /* SongCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D440F771227806EC002D5D3F /* SongCollectionViewController.swift */; };
+		D440F77422791A0A002D5D3F /* UpcomingShowsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D440F77322791A0A002D5D3F /* UpcomingShowsViewController.swift */; };
+		D440F776227925BC002D5D3F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D440F775227925BC002D5D3F /* ViewController.swift */; };
 		D469ADCD2277DC2C0030993D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D469ADCC2277DC2C0030993D /* AppDelegate.swift */; };
 		D469ADD22277DC2C0030993D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D469ADD02277DC2C0030993D /* Main.storyboard */; };
 		D469ADD42277DC2E0030993D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D469ADD32277DC2E0030993D /* Assets.xcassets */; };
@@ -25,8 +25,8 @@
 		CED0E7E8443E0E29C6B9205B /* Pods-never-the-less.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-never-the-less.debug.xcconfig"; path = "Pods/Target Support Files/Pods-never-the-less/Pods-never-the-less.debug.xcconfig"; sourceTree = "<group>"; };
 		D440F7612277EC99002D5D3F /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		D440F76B2277FEB9002D5D3F /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
-		D440F76D227804CD002D5D3F /* SongCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongCollectionViewCell.swift; sourceTree = "<group>"; };
-		D440F771227806EC002D5D3F /* SongCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongCollectionViewController.swift; sourceTree = "<group>"; };
+		D440F77322791A0A002D5D3F /* UpcomingShowsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingShowsViewController.swift; sourceTree = "<group>"; };
+		D440F775227925BC002D5D3F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D469ADC92277DC2C0030993D /* never-the-less.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "never-the-less.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D469ADCC2277DC2C0030993D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D469ADD12277DC2C0030993D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -70,8 +70,8 @@
 			children = (
 				D440F7612277EC99002D5D3F /* ProfileViewController.swift */,
 				D440F76B2277FEB9002D5D3F /* TabBarController.swift */,
-				D440F76D227804CD002D5D3F /* SongCollectionViewCell.swift */,
-				D440F771227806EC002D5D3F /* SongCollectionViewController.swift */,
+				D440F77322791A0A002D5D3F /* UpcomingShowsViewController.swift */,
+				D440F775227925BC002D5D3F /* ViewController.swift */,
 			);
 			path = controllers;
 			sourceTree = "<group>";
@@ -185,16 +185,32 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-never-the-less/Pods-never-the-less-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/BoringSSL-GRPC/openssl_grpc.framework",
 				"${BUILT_PRODUCTS_DIR}/CollectionViewSlantedLayout/CollectionViewSlantedLayout.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC/GRPCClient.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-ProtoRPC/ProtoRPC.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-RxLibrary/RxLibrary.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl_grpc.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CollectionViewSlantedLayout.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GRPCClient.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ProtoRPC.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxLibrary.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -227,11 +243,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D440F776227925BC002D5D3F /* ViewController.swift in Sources */,
 				D440F76C2277FEB9002D5D3F /* TabBarController.swift in Sources */,
-				D440F772227806EC002D5D3F /* SongCollectionViewController.swift in Sources */,
-				D440F76E227804CD002D5D3F /* SongCollectionViewCell.swift in Sources */,
 				D440F7622277EC99002D5D3F /* ProfileViewController.swift in Sources */,
 				D469ADCD2277DC2C0030993D /* AppDelegate.swift in Sources */,
+				D440F77422791A0A002D5D3F /* UpcomingShowsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

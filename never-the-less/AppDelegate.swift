@@ -13,15 +13,22 @@ import Firebase
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-    var tabBarController = TabBarController()
-
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
+        // We must configure before we #69 #blazeitttt🔥
         FirebaseApp.configure()
         
+        // Create the UIWindow with frame equal to the Screen
         window = UIWindow(frame: UIScreen.main.bounds)
+        
+        // Initialize the TabBarController Jawny Jawn Jawn
+        let tabBarController = TabBarController()
+        
+        // Set the r00t and bring down da haus (Connect window to 
         window?.rootViewController = tabBarController
+        
+        // Make the Window visible!
         window?.makeKeyAndVisible()
         
         return true

@@ -1,5 +1,5 @@
 //
-//  SongCollectionViewController.swift
+//  UpcomingShowsCollectionViewController.swift
 //  never-the-less
 //
 //  Created by Philip on 4/30/19.
@@ -7,23 +7,21 @@
 //
 
 import UIKit
-import CollectionViewSlantedLayout
 
-private let reuseIdentifier = "songViewCell"
+private let reuseIdentifier = "Cell"
 
-class SongCollectionViewController: UICollectionViewController {
+class UpcomingShowsViewController: UICollectionViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
-        
-        let slantedSayout = CollectionViewSlantedLayout()
-        UICollectionView(frame: .zero, collectionViewLayout: slantedSayout)
 
         // Register cell classes
         self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
+
+        // Do any additional setup after loading the view.
     }
 
     /*
