@@ -6,10 +6,12 @@ target 'never-the-less' do
   use_frameworks!
 
   # Pods for never-the-less
-  pod 'Alamofire', '~> 4.8.0'
   pod 'Firebase/Core'
   pod 'Firebase/Firestore'
   pod 'SnapKit', '~> 4.0'
   pod 'CollectionViewSlantedLayout', '~> 3.1'
+  pod 'Cards'
+  pod 'CardParts'
+  pod 'Alamofire', '~> 5.0.0-beta.5'
 
 end

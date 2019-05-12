@@ -8,6 +8,7 @@
 
 import UIKit
 import SnapKit
+import Firebase
 
 class ProfileViewController: UIViewController, UIScrollViewDelegate {
     
